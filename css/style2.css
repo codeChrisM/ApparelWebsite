@@ -1,0 +1,211 @@
+
+body {
+  font-family: "Open Sans", sans-serif; }
+
+h1 {
+  color: #ccc;
+  weight: 300; }
+
+figure {
+  margin: auto; }
+
+.content {
+  position: relative;
+  background: white;
+  margin-bottom: 200px;
+  overflow: hidden; }
+  .content article {
+    padding: 50px 0;
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center; }
+
+img {
+  max-width: 100%; }
+
+.bird-box {
+  position: relative;
+  height: 600px;
+  background-image: url(../images/bird-bg.jpg);
+  background-size: auto 600px;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow: hidden; }
+
+.logo {
+  height: 100px;
+  width: 100%;
+  background-image: url(../images/black-bird-logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px; }
+
+.fore-bird {
+  width: 960px;
+  height: 733px;
+  background-image: url(../images/fore-bird.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px;
+  top: 380px; }
+
+.back-bird {
+  width: 960px;
+  height: 298px;
+  background-image: url(../images/back-bird.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  position: absolute;
+  left: 50%;
+  margin-left: -480px; }
+
+
+.clothes-pics figure {
+  margin-bottom: 20px;
+  position: relative;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+}
+.clothes-pics figure.is-showing {
+      opacity: 1;
+      background-color: grey;
+      border-radius: 3%;
+      transform: translateX(0px); 
+    }
+    .clothes-pics figure img {
+      display: block;
+      transform: scale(1.4);
+      transition: all 0.3s ease-in-out;
+
+ }
+    .clothes-pics figure:hover figcaption {
+      left:0%;
+}
+    .clothes-pics figure:hover img {
+      transform: scale(1);
+      cursor: pointer;
+
+ }
+  
+  .clothes-pics figcaption {
+    position: absolute;
+    bottom:10px;
+    left:-100%;
+    background-color: black;
+    color: white;
+    padding:2px 2px;
+    font-size: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+img {
+        border-radius: 0%;
+        transition: all 0.3s ease-in-out;
+
+}
+.is-showing img {
+        border-radius: 15%;
+        transition: all 0.7s ease-in-out;
+}
+
+
+.large-window {
+  height: 400px;
+  background-image: url(../images/model2.jpg);
+  background-position: center 0px;
+  background-repeat: repeat-y;
+  background-attachment: fixed;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 30%;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+
+
+  .large-window .window-tint {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+ }
+
+  .large-window .promo-text {
+    color: white;
+    font-weight: 100;
+    font-size: 50px;
+    line-height: 1.2; }
+    .large-window .promo-text strong {
+      display: block;
+      font-size: 30px; }
+    .large-window .promo-text span {
+      font-weight: 300;
+      font-size: 18px;
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.6); }
+    .large-window .promo-text .window-cta {
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+      border: 1px solid white;
+      padding: 10px 20px;
+    }
+
+     .blog-posts {
+      margin-top: 100px;
+      margin-bottom: 50px;
+
+     }
+    
+ .blog-posts .post {
+    border: 1px solid #e1e1e1;
+    padding: 20px 20px 0;
+    background: white;
+    position: relative; 
+ }
+
+  .blog-posts .post-1 {
+ transform: translate(100px, 20px);}
+  .blog-posts .post-2 {
+  z-index: 2;
+
+}
+  .blog-posts .post-3 {
+  transform: translate(-100px, 20px);
+
+}
+
+
+
+footer {
+  background: black;
+  color: white;
+  padding: 0px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: -1; }
+  footer .footer-stuff {
+    max-width: 640px;
+    margin: 0 auto; }
+  footer a {
+    color: white; }
+  footer input {
+    color: #666; }
